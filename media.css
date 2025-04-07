@@ -1,0 +1,175 @@
+@font-face {
+    font-family: farsi;
+    src: url(/food_deliveri/tanha-font-v0.9/Tanha.woff);
+}
+/* برای نمایشگرهای بزرگ‌تر */
+@media (min-width: 1024px) {
+    .fixed_box_delivery {
+        top: 5%;
+        left: -4%;
+        width: 92px; /* افزایش اندازه برای نمایشگرهای بزرگ */
+    }
+}
+@media (min-width:890px) {
+    .order_food_mobile {
+
+        display: none;
+    }
+
+}
+@media (max-width:890px) {
+    .header_bottom {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .content_left_header_bottom {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content_left_header_bottom p {
+        max-width: 100%;
+    }
+
+    .order_food_desktop {
+        display: none;
+    }
+
+    .order_food_desktop {
+        display: none;
+    }
+
+    .order_food_mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 7rem;
+        align-items: center;
+    }
+
+    .fixed_box_delivery {
+        position: absolute;
+        top: 50%;
+        left: 11%;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 1px;
+        border-width: 1px;
+        padding: 12px;
+
+
+    }
+
+
+    .action_order>button {
+        padding: 9px;
+    }
+    .row_grid_food_products {
+        grid-template-columns: repeat(2, 45%);
+       justify-content: center;
+      }
+
+}
+@media (max-width:879px) {
+    .navigation {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+
+    .link_navigation {
+        justify-self: center;
+    }
+}
+
+@media (min-width:879px) {
+    .menu_icon {
+        display: inline-block;
+        justify-self: flex-end;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .fixed_box_delivery {
+        bottom: 10%;
+        left: 8%;
+        top: auto;
+        width: 69px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .fixed_box_delivery {
+        top: 61%;
+        left: 10%;
+        width: 140px; /* تنظیم متناسب در تبلت */
+    }
+}
+
+
+
+
+/* تنظیم اندازه برای موبایل کوچک */
+@media (max-width: 767px) {
+    .content_right_header_bottom img {
+        max-width: 300px;
+        /* کوچکتر کردن تصویر */
+    }
+}
+
+/* تنظیم اندازه برای موبایل خیلی کوچک */
+@media (max-width: 480px) {
+    .content_right_header_bottom img {
+        max-width: 250px;
+      }  /* حتی کوچکتر برای صفحه‌های خیلی کوچک */
+        .action_order {
+           margin-top: 2rem;
+    }
+    .row_grid_food_products {
+        grid-template-columns: repeat(1, 98%);
+       justify-content: center;
+      }
+      .row_title_section_food h4{
+        font-size: clamp(20px , 4vw , 40px);
+        
+      }
+      .line_bottom_row_title {
+            width: 100px;
+        }   
+}
+
+
+@media (max-width: 450px) {
+    .content_left_header_bottom h1 {
+        font-size: 1.8rem;
+        /* کوچکتر کردن تیتر اصلی */
+        line-height: 40px;
+    }
+
+    .content_left_header_bottom p {
+        font-size: 0.9rem;
+        /* کوچک‌تر کردن متن توضیحات */
+        line-height: 22px;
+    }
+
+    .order_food_mobile {
+        margin: 2rem;
+        /* کاهش فاصله‌های اضافی */
+    }
+
+    .action_order>button {
+        padding: 6px 15px;
+        /* تنظیم دکمه‌ها برای فضاهای کوچک */
+        font-size: 14px;
+    }
+}
